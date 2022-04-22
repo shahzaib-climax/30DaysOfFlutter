@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Text("Hello $days"),
       ),
-      drawer:  MyDrawer(),
+      drawer:  const MyDrawer(),
     );
   }
 }
