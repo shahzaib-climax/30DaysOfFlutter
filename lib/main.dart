@@ -16,13 +16,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
+      //for light theme
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         fontFamily: GoogleFonts.lato().fontFamily
       ),
+
+      //for dark theme
       darkTheme: ThemeData(
           brightness: Brightness.dark
       ),
+
+      // for navigation
       initialRoute: "/login",
       routes: {
         MyRoutes.loginRoute: (context) => const LoginPage(),
