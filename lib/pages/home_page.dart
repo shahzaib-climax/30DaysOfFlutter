@@ -4,8 +4,6 @@ import 'package:test_flutter/models/catalog.dart';
 import 'package:test_flutter/widgets/drawer.dart';
 import 'dart:convert';
 
-import '../widgets/item_widget.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -58,7 +56,10 @@ class _HomePageState extends State<HomePage> {
                       header: Container(
                         padding: const EdgeInsets.all(12),
                         decoration: const BoxDecoration(color: Colors.indigo),
-                        child: Text(item.name, style: const TextStyle(color: Colors.white),),
+                        child: Text(
+                          item.name,
+                          style: const TextStyle(color: Colors.white),
+                        ),
                       ),
                       child: Image.network(
                         item.image,
