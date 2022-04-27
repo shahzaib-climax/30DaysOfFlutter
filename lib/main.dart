@@ -20,15 +20,13 @@ class MyApp extends StatelessWidget {
       //for light theme
       theme: MyTheme.lightTheme(context),
       //for dark theme
-      darkTheme: ThemeData(
-          brightness: Brightness.dark
-      ),
+      darkTheme: ThemeData(brightness: Brightness.dark),
 
       // for navigation
-      initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.loginRoute,
       routes: {
         MyRoutes.loginRoute: (context) => const LoginPage(),
-        MyRoutes.homeRoute : (context) => const HomePage(),
+        MyRoutes.homeRoute: (context) => const HomePage(),
       },
     );
   }
