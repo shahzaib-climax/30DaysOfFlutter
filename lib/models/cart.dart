@@ -1,12 +1,6 @@
 import 'package:test_flutter/models/catalog.dart';
 
 class CartModel {
-  static final cartModel = CartModel.internal();
-
-  CartModel.internal();
-
-  factory CartModel() => cartModel;
-
   late CatalogModel _catalog;
 
   //selected cart items
