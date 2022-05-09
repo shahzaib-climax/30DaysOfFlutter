@@ -8,8 +8,6 @@ import 'package:test_flutter/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:test_flutter/models/catalog.dart';
-import 'package:test_flutter/widgets/themes.dart';
-
 import '../widgets/home_widgets/catalog_header.dart';
 import '../widgets/home_widgets/catalog_list.dart';
 
