@@ -18,10 +18,6 @@ class CartModel {
 
   num get totalPrice => items.fold(
       0, (previousValue, currentItem) => previousValue + currentItem.price);
-
-  void remove(Item item) {
-    _itemsIds.remove(item.id);
-  }
 }
 
 class AddMutation extends VxMutation<MyStore> {
